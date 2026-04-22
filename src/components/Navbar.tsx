@@ -12,7 +12,7 @@ const navItems = [
   { label: "FAQ", href: "/faq" },
   { label: "Noticias", href: "/noticias" },
   { label: "Diagnóstico", href: "/diagnostico" },
-  { label: "Contacta", href: "/contacta", highlight: true },
+  { label: "Contacto", href: "/contacto", highlight: true },
 ];
 
 export default function Navbar() {

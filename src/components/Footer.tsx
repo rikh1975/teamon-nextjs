@@ -63,13 +63,13 @@ const footerSections = [
     title: "ACTIVIDAD",
     content: (
       <div className="space-y-2 text-sm text-gray-300">
-        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Corporate Finance Barcelona</Link>
-        <Link href="/" className="block hover:text-[#009bbf] transition-colors">M&A Argentina</Link>
-        <Link href="/" className="block hover:text-[#009bbf] transition-colors">M&A México</Link>
-        <Link href="/" className="block hover:text-[#009bbf] transition-colors">M&A Colombia</Link>
-        <Link href="/" className="block hover:text-[#009bbf] transition-colors">M&A Chile</Link>
-        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Corporate Finance Florida</Link>
-        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Crossborder LATAM-España</Link>
+        <Link href="/finanzas-corporativas-barcelona" className="block hover:text-[#009bbf] transition-colors">Corporate Finance Barcelona</Link>
+        <Link href="/ma-corporate-finance-argentina" className="block hover:text-[#009bbf] transition-colors">M&A Argentina</Link>
+        <Link href="/ma-corporate-finance-mexico" className="block hover:text-[#009bbf] transition-colors">M&A México</Link>
+        <Link href="/ma-corporate-finance-colombia" className="block hover:text-[#009bbf] transition-colors">M&A Colombia</Link>
+        <Link href="/ma-corporate-finance-chile" className="block hover:text-[#009bbf] transition-colors">M&A Chile</Link>
+        <Link href="/ma-corporate-finance-florida" className="block hover:text-[#009bbf] transition-colors">Corporate Finance Florida</Link>
+        <Link href="/ma-cross-border-espana-latam" className="block hover:text-[#009bbf] transition-colors">Crossborder LATAM-España</Link>
       </div>
     ),
   },
@@ -77,13 +77,13 @@ const footerSections = [
     title: "INFORMACIÓN",
     content: (
       <div className="space-y-2 text-sm text-gray-300">
-        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Cómo valorar una empresa</Link>
-        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Proceso de due diligence</Link>
-        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Múltiplos EBITDA por sector</Link>
-        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Fiscalidad en venta de empresas</Link>
-        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Protocolo familiar</Link>
-        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Cuánto vale mi empresa</Link>
-        <Link href="/" className="block hover:text-[#009bbf] transition-colors">WACC: coste medio ponderado</Link>
+        <Link href="/valoracion-de-empresas" className="block hover:text-[#009bbf] transition-colors">Cómo valorar una empresa</Link>
+        <Link href="/venta-de-empresas" className="block hover:text-[#009bbf] transition-colors">Proceso de due diligence</Link>
+        <Link href="/glosario-ma" className="block hover:text-[#009bbf] transition-colors">Glosario M&A</Link>
+        <Link href="/empresa-familiar" className="block hover:text-[#009bbf] transition-colors">Empresa familiar</Link>
+        <Link href="/faq" className="block hover:text-[#009bbf] transition-colors">Preguntas frecuentes</Link>
+        <Link href="/diagnostico" className="block hover:text-[#009bbf] transition-colors">Diagnóstico empresarial</Link>
+        <Link href="/videoblog" className="block hover:text-[#009bbf] transition-colors">Videoblog</Link>
       </div>
     ),
   },
