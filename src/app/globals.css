@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-teamon-blue: #278CC8;
+  --color-teamon-accent: #009bbf;
+  --color-teamon-dark: #1a1a2e;
+  --color-teamon-gray: #7F7F7F;
+  --color-teamon-light: #f8f9fa;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+  }
+}
+
+@layer utilities {
+  .ticker-track {
+    display: flex;
+    animation: ticker 30s linear infinite;
+    width: max-content;
+  }
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
