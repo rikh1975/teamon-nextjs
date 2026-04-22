@@ -46,13 +46,13 @@ const team = [
 
 export default function TeamSection() {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <p className="text-[#278CC8] text-sm font-semibold tracking-widest uppercase mb-4">
+        <div className="text-center mb-20">
+          <p className="text-[#009bbf] text-xs font-light tracking-widest uppercase mb-6">
             Nuestro Equipo
           </p>
-          <h2 className="text-4xl md:text-5xl font-light text-gray-800">
+          <h2 className="text-5xl md:text-6xl font-light text-gray-900 tracking-tight">
             Profesionales con experiencia
           </h2>
         </div>
@@ -61,40 +61,40 @@ export default function TeamSection() {
           {team.map((member) => (
             <div
               key={member.name}
-              className="group bg-white rounded-lg p-8 text-center hover:shadow-xl transition-all duration-500 border border-gray-100 hover:border-[#278CC8]/30"
+              className="group bg-white rounded-lg p-10 text-center hover:shadow-xl transition-all duration-500 border border-gray-100 hover:border-[#009bbf]/20"
             >
               {/* Avatar placeholder */}
-              <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-[#1a1a2e] flex items-center justify-center group-hover:bg-[#278CC8] transition-colors duration-500">
-                <span className="text-white text-xl font-light tracking-wider">
+              <div className="w-28 h-28 mx-auto mb-8 rounded-full bg-[#0a1628] flex items-center justify-center group-hover:bg-[#009bbf] transition-colors duration-500">
+                <span className="text-white text-2xl font-light tracking-wider">
                   {member.initials}
                 </span>
               </div>
 
-              <h3 className="text-lg font-semibold text-gray-800 mb-1">
+              <h3 className="text-lg font-light text-gray-900 mb-2">
                 {member.name}
               </h3>
-              <p className="text-[#278CC8] text-sm font-medium mb-1">
+              <p className="text-[#009bbf] text-sm font-light mb-2">
                 {member.role}
               </p>
-              <p className="text-gray-400 text-xs tracking-wide uppercase mb-5">
+              <p className="text-gray-500 text-xs tracking-wide uppercase mb-6 font-light">
                 {member.area}
               </p>
 
-              <div className="flex justify-center gap-3">
+              <div className="flex justify-center gap-4">
                 <a
                   href={`mailto:${member.email}`}
-                  className="text-gray-400 hover:text-[#278CC8] transition-colors"
+                  className="text-gray-400 hover:text-[#009bbf] transition-colors"
                   title={member.email}
                 >
-                  <Mail size={18} />
+                  <Mail size={20} />
                 </a>
                 <a
                   href={member.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-[#278CC8] transition-colors"
+                  className="text-gray-400 hover:text-[#009bbf] transition-colors"
                 >
-                  <LinkedinIcon size={18} />
+                  <LinkedinIcon size={20} />
                 </a>
               </div>
             </div>

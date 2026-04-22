@@ -11,9 +11,9 @@ export default function IndustryTicker() {
   const tickerContent = industries.join(" · ") + " · ";
 
   return (
-    <div className="bg-[#1a1a2e] border-y border-gray-700 py-3 overflow-hidden">
+    <div className="bg-[#0a1628] border-y border-gray-700 py-4 overflow-hidden">
       <div className="ticker-track">
-        <span className="text-gray-400 text-xs tracking-[0.2em] whitespace-nowrap px-4">
+        <span className="text-gray-500 text-xs tracking-[0.15em] whitespace-nowrap px-4 font-light">
           {tickerContent}{tickerContent}
         </span>
       </div>

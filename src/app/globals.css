@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-teamon-blue: #278CC8;
+  --color-teamon-blue: #009bbf;
   --color-teamon-accent: #009bbf;
-  --color-teamon-dark: #1a1a2e;
+  --color-teamon-dark: #0a1628;
   --color-teamon-gray: #7F7F7F;
   --color-teamon-light: #f8f9fa;
 }

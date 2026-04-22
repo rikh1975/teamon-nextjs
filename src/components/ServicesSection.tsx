@@ -5,67 +5,78 @@ import Link from "next/link";
 const services = [
   {
     icon: Building2,
-    title: "Finanzas corporativas",
+    title: "Corporate Finance",
     description:
-      "teamOn ofrece servicios integrales de Finanzas Corporativas, incluyendo operaciones de compraventa de empresas, Obtención de Capital de Crecimiento y Asesoramiento en estrategias Buy and Build.",
+      "Servicios integrales de Finanzas Corporativas: compraventa de empresas, capital de crecimiento y estrategias Buy and Build.",
     links: [
-      { label: "vende tu empresa", href: "/servicios" },
-      { label: "compra una empresa", href: "/servicios" },
-      { label: "reestructura tus finanzas", href: "/servicios" },
+      { label: "Vende tu empresa", href: "/servicios" },
+      { label: "Compra una empresa", href: "/servicios" },
+      { label: "Reestructura tus finanzas", href: "/servicios" },
     ],
   },
   {
     icon: TrendingUp,
-    title: "Inversión y capital",
+    title: "Inversión y Capital",
     description:
-      "Nuestros servicios de asesoramiento financiero e inversión representan un puente estratégico que conecta a Family Offices, firmas de capital privado e inversores con selectas oportunidades de inversión.",
+      "Conectamos Family Offices, firmas de capital privado e inversores con selectas oportunidades de inversión estratégica.",
     links: [
-      { label: "levanta capital", href: "/servicios" },
-      { label: "encuentra socios", href: "/servicios" },
-      { label: "encuentra oportunidades", href: "/servicios" },
+      { label: "Levanta capital", href: "/servicios" },
+      { label: "Encuentra socios", href: "/servicios" },
+      { label: "Encuentra oportunidades", href: "/servicios" },
     ],
   },
   {
     icon: Home,
-    title: "Transacciones inmobiliarias",
+    title: "Real Estate",
     description:
-      "Con un enfoque en soluciones estratégicas y personalizadas, nuestro asesoramiento en transacciones inmobiliarias está orientado a satisfacer las diversas necesidades de empresas y familias.",
+      "Soluciones estratégicas en transacciones inmobiliarias orientadas a satisfacer las necesidades de empresas y familias.",
     links: [
-      { label: "vende tu inmueble", href: "/servicios" },
-      { label: "compra un inmueble", href: "/servicios" },
-      { label: "otras gestiones", href: "/servicios" },
+      { label: "Vende tu inmueble", href: "/servicios" },
+      { label: "Compra un inmueble", href: "/servicios" },
+      { label: "Otras gestiones", href: "/servicios" },
     ],
   },
 ];
 
 export default function ServicesSection() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-28 bg-white">
       <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-20">
+          <p className="text-[#009bbf] text-xs font-light tracking-widest uppercase mb-4">
+            Servicios
+          </p>
+          <h2 className="text-5xl md:text-6xl font-light text-gray-900 tracking-tight">
+            Soluciones integrales
+          </h2>
+        </div>
+
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
             <div
               key={service.title}
-              className="group bg-gray-50 rounded-lg p-8 hover:bg-[#1a1a2e] hover:text-white transition-all duration-500 border border-gray-100 hover:border-[#278CC8]/30"
+              className="group bg-white rounded-lg p-10 hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-[#009bbf]/20"
             >
-              <service.icon
-                size={40}
-                className="text-[#278CC8] mb-6 group-hover:text-[#278CC8]"
-              />
-              <h3 className="text-2xl font-light mb-4 text-gray-800 group-hover:text-white">
+              <div className="mb-6">
+                <service.icon
+                  size={48}
+                  className="text-[#009bbf] group-hover:text-[#007a92] transition-colors"
+                />
+              </div>
+              <h3 className="text-2xl font-light mb-4 text-gray-900">
                 {service.title}
               </h3>
-              <p className="text-sm text-gray-500 group-hover:text-gray-300 leading-relaxed mb-6">
+              <p className="text-sm text-gray-600 leading-relaxed mb-8 font-light">
                 {service.description}
               </p>
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {service.links.map((link) => (
                   <Link
                     key={link.label}
                     href={link.href}
-                    className="flex items-center gap-2 text-sm text-[#278CC8] hover:text-[#009bbf] transition-colors"
+                    className="flex items-center gap-2 text-sm text-[#009bbf] hover:text-[#007a92] transition-colors font-light"
                   >
-                    <ArrowRight size={14} />
+                    <ArrowRight size={16} />
                     {link.label}
                   </Link>
                 ))}

@@ -7,54 +7,76 @@ const services = [
     icon: Building2,
     title: "Corporate Finance",
     description:
-      "teamOn offers comprehensive Corporate Finance services, including company buy-sell transactions, Growth Capital sourcing, and Buy and Build strategy advisory.",
+      "Comprehensive Corporate Finance services: company buy-sell transactions, Growth Capital sourcing, and Buy and Build strategy advisory.",
     links: [
-      { label: "sell your company", href: "/en/services" },
-      { label: "buy a company", href: "/en/services" },
-      { label: "restructure your finances", href: "/en/services" },
+      { label: "Sell your company", href: "/en/services" },
+      { label: "Buy a company", href: "/en/services" },
+      { label: "Restructure your finances", href: "/en/services" },
     ],
   },
   {
     icon: TrendingUp,
     title: "Investment & Capital",
     description:
-      "Our financial advisory and investment services represent a strategic bridge connecting Family Offices, private equity firms and investors with select investment opportunities.",
+      "Strategic bridge connecting Family Offices, private equity firms and investors with select investment opportunities.",
     links: [
-      { label: "raise capital", href: "/en/services" },
-      { label: "find partners", href: "/en/services" },
-      { label: "find opportunities", href: "/en/services" },
+      { label: "Raise capital", href: "/en/services" },
+      { label: "Find partners", href: "/en/services" },
+      { label: "Find opportunities", href: "/en/services" },
     ],
   },
   {
     icon: Home,
-    title: "Real Estate Transactions",
+    title: "Real Estate",
     description:
-      "With a focus on strategic and customized solutions, our real estate transaction advisory is oriented to meet the diverse needs of companies and families.",
+      "Strategic and customized real estate transaction advisory oriented to meet the diverse needs of companies and families.",
     links: [
-      { label: "sell your property", href: "/en/services" },
-      { label: "buy a property", href: "/en/services" },
-      { label: "other services", href: "/en/services" },
+      { label: "Sell your property", href: "/en/services" },
+      { label: "Buy a property", href: "/en/services" },
+      { label: "Other services", href: "/en/services" },
     ],
   },
 ];
 
 export default function ServicesSectionEN() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-28 bg-white">
       <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-20">
+          <p className="text-[#009bbf] text-xs font-light tracking-widest uppercase mb-4">
+            Services
+          </p>
+          <h2 className="text-5xl md:text-6xl font-light text-gray-900 tracking-tight">
+            Comprehensive Solutions
+          </h2>
+        </div>
+
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
             <div
               key={service.title}
-              className="group bg-gray-50 rounded-lg p-8 hover:bg-[#1a1a2e] hover:text-white transition-all duration-500 border border-gray-100 hover:border-[#278CC8]/30"
+              className="group bg-white rounded-lg p-10 hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-[#009bbf]/20"
             >
-              <service.icon size={40} className="text-[#278CC8] mb-6 group-hover:text-[#278CC8]" />
-              <h3 className="text-2xl font-light mb-4 text-gray-800 group-hover:text-white">{service.title}</h3>
-              <p className="text-sm text-gray-500 group-hover:text-gray-300 leading-relaxed mb-6">{service.description}</p>
-              <div className="space-y-2">
+              <div className="mb-6">
+                <service.icon
+                  size={48}
+                  className="text-[#009bbf] group-hover:text-[#007a92] transition-colors"
+                />
+              </div>
+              <h3 className="text-2xl font-light mb-4 text-gray-900">
+                {service.title}
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed mb-8 font-light">
+                {service.description}
+              </p>
+              <div className="space-y-3">
                 {service.links.map((link) => (
-                  <Link key={link.label} href={link.href} className="flex items-center gap-2 text-sm text-[#278CC8] hover:text-[#009bbf] transition-colors">
-                    <ArrowRight size={14} />
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="flex items-center gap-2 text-sm text-[#009bbf] hover:text-[#007a92] transition-colors font-light"
+                  >
+                    <ArrowRight size={16} />
                     {link.label}
                   </Link>
                 ))}

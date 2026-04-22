@@ -40,22 +40,22 @@ function AnimatedCounter({ target, suffix }: { target: number; suffix: string })
   }, [target]);
 
   return (
-    <div ref={ref} className="text-5xl md:text-6xl font-bold text-[#278CC8]">
+    <div ref={ref} className="text-6xl md:text-7xl font-light text-[#009bbf] tracking-tight">
       {count}
-      <span className="text-3xl">{suffix}</span>
+      <span className="text-4xl font-light">{suffix}</span>
     </div>
   );
 }
 
 export default function StatsSection() {
   return (
-    <section className="py-20 bg-[#1a1a2e]">
+    <section className="py-32 bg-[#0a1628]">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
           {stats.map((stat) => (
-            <div key={stat.label}>
+            <div key={stat.label} className="space-y-4">
               <AnimatedCounter target={stat.value} suffix={stat.suffix} />
-              <p className="text-gray-400 text-sm mt-3 tracking-wide uppercase">
+              <p className="text-gray-400 text-xs tracking-widest uppercase font-light">
                 {stat.label}
               </p>
             </div>

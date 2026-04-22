@@ -10,8 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         teamon: {
-          blue: "#278CC8",
-          dark: "#1a1a2e",
+          blue: "#009bbf",
+          dark: "#0a1628",
           gray: "#7F7F7F",
           light: "#f8f9fa",
           accent: "#009bbf",

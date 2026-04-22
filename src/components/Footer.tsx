@@ -49,13 +49,13 @@ const footerSections = [
     title: "SERVICIOS",
     content: (
       <div className="space-y-2 text-sm text-gray-300">
-        <Link href="/servicios" className="block hover:text-[#278CC8] transition-colors">Venta de empresas en España</Link>
-        <Link href="/servicios" className="block hover:text-[#278CC8] transition-colors">Empresa familiar</Link>
-        <Link href="/servicios" className="block hover:text-[#278CC8] transition-colors">Fusiones y adquisiciones (M&A)</Link>
-        <Link href="/servicios" className="block hover:text-[#278CC8] transition-colors">Finanzas corporativas</Link>
-        <Link href="/servicios" className="block hover:text-[#278CC8] transition-colors">Inversión y capital</Link>
-        <Link href="/servicios" className="block hover:text-[#278CC8] transition-colors">Transacciones inmobiliarias</Link>
-        <Link href="/servicios" className="block hover:text-[#278CC8] transition-colors">Glosario de M&A</Link>
+        <Link href="/servicios" className="block hover:text-[#009bbf] transition-colors">Venta de empresas en España</Link>
+        <Link href="/servicios" className="block hover:text-[#009bbf] transition-colors">Empresa familiar</Link>
+        <Link href="/servicios" className="block hover:text-[#009bbf] transition-colors">Fusiones y adquisiciones (M&A)</Link>
+        <Link href="/servicios" className="block hover:text-[#009bbf] transition-colors">Finanzas corporativas</Link>
+        <Link href="/servicios" className="block hover:text-[#009bbf] transition-colors">Inversión y capital</Link>
+        <Link href="/servicios" className="block hover:text-[#009bbf] transition-colors">Transacciones inmobiliarias</Link>
+        <Link href="/servicios" className="block hover:text-[#009bbf] transition-colors">Glosario de M&A</Link>
       </div>
     ),
   },
@@ -63,13 +63,13 @@ const footerSections = [
     title: "ACTIVIDAD",
     content: (
       <div className="space-y-2 text-sm text-gray-300">
-        <Link href="/" className="block hover:text-[#278CC8] transition-colors">Corporate Finance Barcelona</Link>
-        <Link href="/" className="block hover:text-[#278CC8] transition-colors">M&A Argentina</Link>
-        <Link href="/" className="block hover:text-[#278CC8] transition-colors">M&A México</Link>
-        <Link href="/" className="block hover:text-[#278CC8] transition-colors">M&A Colombia</Link>
-        <Link href="/" className="block hover:text-[#278CC8] transition-colors">M&A Chile</Link>
-        <Link href="/" className="block hover:text-[#278CC8] transition-colors">Corporate Finance Florida</Link>
-        <Link href="/" className="block hover:text-[#278CC8] transition-colors">Crossborder LATAM-España</Link>
+        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Corporate Finance Barcelona</Link>
+        <Link href="/" className="block hover:text-[#009bbf] transition-colors">M&A Argentina</Link>
+        <Link href="/" className="block hover:text-[#009bbf] transition-colors">M&A México</Link>
+        <Link href="/" className="block hover:text-[#009bbf] transition-colors">M&A Colombia</Link>
+        <Link href="/" className="block hover:text-[#009bbf] transition-colors">M&A Chile</Link>
+        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Corporate Finance Florida</Link>
+        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Crossborder LATAM-España</Link>
       </div>
     ),
   },
@@ -77,13 +77,13 @@ const footerSections = [
     title: "INFORMACIÓN",
     content: (
       <div className="space-y-2 text-sm text-gray-300">
-        <Link href="/" className="block hover:text-[#278CC8] transition-colors">Cómo valorar una empresa</Link>
-        <Link href="/" className="block hover:text-[#278CC8] transition-colors">Proceso de due diligence</Link>
-        <Link href="/" className="block hover:text-[#278CC8] transition-colors">Múltiplos EBITDA por sector</Link>
-        <Link href="/" className="block hover:text-[#278CC8] transition-colors">Fiscalidad en venta de empresas</Link>
-        <Link href="/" className="block hover:text-[#278CC8] transition-colors">Protocolo familiar</Link>
-        <Link href="/" className="block hover:text-[#278CC8] transition-colors">Cuánto vale mi empresa</Link>
-        <Link href="/" className="block hover:text-[#278CC8] transition-colors">WACC: coste medio ponderado</Link>
+        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Cómo valorar una empresa</Link>
+        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Proceso de due diligence</Link>
+        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Múltiplos EBITDA por sector</Link>
+        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Fiscalidad en venta de empresas</Link>
+        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Protocolo familiar</Link>
+        <Link href="/" className="block hover:text-[#009bbf] transition-colors">Cuánto vale mi empresa</Link>
+        <Link href="/" className="block hover:text-[#009bbf] transition-colors">WACC: coste medio ponderado</Link>
       </div>
     ),
   },
@@ -93,20 +93,22 @@ export default function Footer() {
   const [openSection, setOpenSection] = useState<number | null>(null);
 
   return (
-    <footer className="bg-[#1a1a2e] text-white">
-      <div className="max-w-7xl mx-auto px-6 pt-16 pb-8">
+    <footer className="bg-[#0a1628] text-white">
+      <div className="max-w-7xl mx-auto px-6 pt-20 pb-8">
         {/* Logo + Copyright */}
-        <div className="mb-10">
-          <div className="text-2xl tracking-tight mb-4">
-            team<span className="text-[#278CC8]">O</span>n
-          </div>
-          <p className="text-gray-400 text-sm">2026 &copy;</p>
-          <p className="text-gray-400 text-sm">Todos los derechos reservados</p>
-          <div className="flex gap-4 mt-4">
-            <a href="https://linkedin.com/company/teamon" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#278CC8] transition-colors">
+        <div className="mb-16 pb-10 border-b border-gray-700">
+          <img
+            src="https://teamon.es/wp-content/uploads/2022/02/teamOn.png"
+            alt="teamOn"
+            className="h-10 w-auto mb-6"
+          />
+          <p className="text-gray-500 text-sm font-light mb-2">© 2026 teamOn</p>
+          <p className="text-gray-500 text-sm font-light mb-6">Todos los derechos reservados</p>
+          <div className="flex gap-6">
+            <a href="https://linkedin.com/company/teamon" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[#009bbf] transition-colors">
               <LinkedinIcon size={20} />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#278CC8] transition-colors">
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[#009bbf] transition-colors">
               <YoutubeIcon size={20} />
             </a>
           </div>
@@ -118,12 +120,12 @@ export default function Footer() {
             <div key={section.title} className="border-b border-gray-700">
               <button
                 onClick={() => setOpenSection(openSection === index ? null : index)}
-                className="w-full flex items-center justify-between py-5 text-left"
+                className="w-full flex items-center justify-between py-6 text-left hover:text-[#009bbf] transition-colors"
               >
-                <span className="text-sm font-semibold tracking-widest">{section.title}</span>
+                <span className="text-xs font-light tracking-widest uppercase">{section.title}</span>
                 <ChevronDown
                   size={20}
-                  className={`text-[#278CC8] transition-transform ${
+                  className={`text-[#009bbf] transition-transform flex-shrink-0 ${
                     openSection === index ? "rotate-180" : ""
                   }`}
                 />
@@ -138,10 +140,10 @@ export default function Footer() {
         </div>
 
         {/* Bottom links */}
-        <div className="mt-8 flex flex-wrap gap-4 text-xs text-gray-500">
-          <Link href="/politica-de-privacidad" className="hover:text-gray-300">Política de privacidad</Link>
-          <Link href="/politica-de-cookies" className="hover:text-gray-300">Política de cookies</Link>
-          <Link href="/terminos-de-uso" className="hover:text-gray-300">Términos de uso</Link>
+        <div className="mt-10 flex flex-wrap gap-6 text-xs text-gray-600 font-light">
+          <Link href="/politica-de-privacidad" className="hover:text-[#009bbf] transition-colors">Política de privacidad</Link>
+          <Link href="/politica-de-cookies" className="hover:text-[#009bbf] transition-colors">Política de cookies</Link>
+          <Link href="/terminos-de-uso" className="hover:text-[#009bbf] transition-colors">Términos de uso</Link>
         </div>
       </div>
     </footer>
